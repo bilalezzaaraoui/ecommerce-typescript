@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import FirstBanner from "../../components/homepag/firstBanner/FirstBanner";
+import FirstBanner from "../../components/homepage/firstBanner/FirstBanner";
 import stereo from "../../assets/images/stereo.webp";
-import Card from "../../components/homepag/card/Card";
+import Card from "../../components/homepage/card/Card";
+import SecondBanner from "../../components/homepage/seconBanner/SecondBanner";
 
 const Home = () => {
   const data = [
@@ -29,6 +30,7 @@ const Home = () => {
           />
         ))}
       </GridLayout>
+      <SecondBanner />
     </Container>
   );
 };

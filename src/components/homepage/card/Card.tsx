@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 type CardsProps = {
   image: string;
@@ -8,13 +9,15 @@ type CardsProps = {
 
 const Card = (props: CardsProps) => {
   return (
-    <Container className="card">
-      <Image>
-        <img src={props.image} alt="product image" />
-      </Image>
-      <Title>{props.title}</Title>
-      <Price>{props.price}</Price>
-    </Container>
+    <Link to="product/id">
+      <Container className="card">
+        <Image>
+          <img src={props.image} alt="product image" />
+        </Image>
+        <Title>{props.title}</Title>
+        <Price>{props.price}</Price>
+      </Container>
+    </Link>
   );
 };
 
